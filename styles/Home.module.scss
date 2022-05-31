@@ -1,0 +1,129 @@
+.homepage {
+  color: #ffffff;
+  .community {
+    background-image: url('../assets/images/community-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 652px;
+    .community_content {
+      padding: 140px 0px 0 30px;
+      font-style: normal;
+      .title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        padding-bottom: 32px;
+      }
+      .subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FCFCFC;
+      }
+      .community_actions {
+        display: flex;
+        justify-items: center;
+        margin-top: 42px;
+        .action {
+          margin-right: 32px;
+          background: #4F70FD;
+          border-radius: 22px;
+          color: #FCFCFC;
+        }
+      }
+   
+    }
+  }
+  .token{
+    height: 792px;
+   
+    .buy_doge_swap {
+      background: #1E1B68;
+      height: 100%;
+    }
+    .buy_doge_nft {
+      background: #141245;
+      height: 100%;
+    }
+    .follow_container {
+      position: relative;
+      .follow_us {
+        position: absolute;
+        background: #1F0554;
+        border: 0.5px solid #656161;
+        border-radius: 50px;
+        box-sizing: border-box;
+        height: 424px;
+        width: 100%;
+        left: 0;
+        top: -212px;
+        color: #ffffff;
+        .bsc_address_wrapper {
+          display: flex;
+          align-items:center;
+          padding: 50px 100px 50px 100px;
+          .input_wrapper {
+            display: flex;
+            align-items:center;
+            background: #1A0E31;
+            border-radius: 22px;
+            width: 780px;
+            height: 54px;
+            padding: 16px 20px 16px 20px;
+            .select_address {
+              width: 160px;
+              svg {
+                color: #ffffff;
+              }
+              fieldset {
+                border: none;
+              }
+            }
+          }
+          .address_coppy {
+            margin-left: auto;
+            .btn_address_coppy {
+              font-style: normal;
+              font-size: 16px;
+              line-height: 19px;
+              background: #4F70FD;
+              border-radius: 22px;
+              color: #FFFFFF;
+            }
+          }
+        }
+        .token_header {
+          text-align: center;
+          font-weight: 700;
+          font-size: 24px;
+          margin-bottom: 40px;
+        }
+        .social_medias {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          .media{
+            margin: 20px;
+          }
+        }
+        .token_actions {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          .action {
+            font-style: normal;
+            font-size: 16px;
+            line-height: 19px;
+            background: #4F70FD;
+            border-radius: 22px;
+            color: #FFFFFF;
+            margin: 20px;
+          }
+        }
+      }
+    }
+
+  }
+}
