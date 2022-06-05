@@ -23,7 +23,7 @@ const Token = () => {
       
 
       <Grid container sx={{ height: "100%" }}>
-        <Grid item md={6}  xs={12} sx={{ height: "100%", backgroundColor:'#141245' }}>
+        <Grid item md={6}  xs={12} className={styles.token_left_col}>
           <Box className={styles.buy_doge_swap}>
               <Box className={styles.image_token}>
                   <Image src={tokendoge.src} alt='' width={ 278} height={214} />
@@ -36,7 +36,7 @@ const Token = () => {
               </Box>
           </Box>
         </Grid>
-        <Grid item md={6} xs={12} sx={{ height: "100%",backgroundColor:'#141245' }}>
+        <Grid item md={6} xs={12} className={styles.token_right_col} sx={{ height: "100%",backgroundColor:'#141245' }}>
           <Box className={styles.buy_doge_nft}>
           
             <Box className={styles.image_token}>

@@ -2,6 +2,7 @@
     color: #ffffff;
     padding: 40px 0 40px 0;
     background: #0B011E;
+    position: relative;
     .footer_title {
         font-weight: 700;
         font-size: 20px;
@@ -18,4 +19,22 @@
         text-align: center;
         margin-bottom: 13px;
     }
+    .left_col {
+        position: relative;
+        .join_the_pack {
+            // position: absolute;
+            margin-top:67px ;
+            bottom: 30px;
+            .social_media {
+                display: flex;
+                // align-items: center;
+                // text-align: center;
+                // justify-content: center;
+                .media {
+                    margin-right: 8.6px;
+                  }
+            }
+        }
+    }
+  
 }

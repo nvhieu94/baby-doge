@@ -8,6 +8,13 @@ import FormControl, { useFormControl } from "@mui/material/FormControl";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import { useForm } from "react-hook-form";
 import icon from "@/assets/icons/bx-paper-plane.svg";
+import facebookImg from "@/assets/images/facebook.svg";
+import instargramImg from "@/assets/images/instargram.svg";
+import telegramImg from "@/assets/images/telegram.svg";
+import twitterImg from "@/assets/images/twitter.svg";
+import socialMedia2 from "@/assets/images/social-media-2.svg";
+import socialMedia1 from "@/assets/images/social-media-1.svg";
+
 const Footer = () => {
   const {
     register,
@@ -25,7 +32,7 @@ const Footer = () => {
     <Box className={styles.footer}>
       <Container>
         <Grid container spacing={4}>
-          <Grid item md={4} xs={12}>
+          <Grid item md={4} xs={12} className={styles.left_col}>
             <Typography component="p" className={styles.footer_title}>
               SUBSCRIBE TO OUR NEWSLETTER{" "}
             </Typography>
@@ -59,6 +66,36 @@ const Footer = () => {
                   </FormHelperText>
                 </FormControl>
               </form>
+            </Box>
+            <Box className={styles.join_the_pack}>
+              <Typography component="p" className={styles.footer_title}>
+                JOIN THE PACK
+              </Typography>
+              <Box className={styles.social_media}>
+                <Box className={styles.media}>
+                  <Image src={telegramImg.src} width={23} height={23} alt="" />
+                </Box>
+                <Box className={styles.media}>
+                  <Image src={twitterImg.src} width={23} height={23} alt="" />
+                </Box>
+                <Box className={styles.media}>
+                  <Image src={socialMedia2.src} width={23} height={23} alt="" />
+                </Box>
+                <Box className={styles.media}>
+                  <Image src={socialMedia1.src} width={23} height={23} alt="" />
+                </Box>
+                <Box className={styles.media}>
+                  <Image src={facebookImg.src} width={23} height={23} alt="" />
+                </Box>
+                <Box className={styles.media}>
+                  <Image
+                    src={instargramImg.src}
+                    width={23}
+                    height={23}
+                    alt=""
+                  />
+                </Box>
+              </Box>
             </Box>
           </Grid>
           <Grid item md={4} xs={12}>

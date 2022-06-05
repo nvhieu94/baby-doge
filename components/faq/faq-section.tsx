@@ -83,7 +83,7 @@ const FaqSctionComponent = () => {
   return (
     <Box className={styles.faq_section}>
       <Container>
-        <Box className={styles.title}>PAW BOARD</Box>
+        <Box className={styles.title}>FAQ</Box>
         <Box className={styles.faq_list}>
           {data.map((item: any, index: number) => (
             <Accordion

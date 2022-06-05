@@ -1,6 +1,4 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import React, {useEffect, useRef} from 'react';
 
 import MainLayout from "@/components/layouts/main-layout/main-layout";
 
@@ -26,6 +24,7 @@ import ContactUs from '@/components/contact-us'
 //styles
 import styles from "@/styles/Home.module.scss";
 import SlickSlide from '@/components/slick-slide';
+
 
 const asSeenInData = [
   {
@@ -176,12 +175,25 @@ const asSeenInData = [
 ];
 
 const Home: NextPageWithLayout = () => {
+    // const myRef = useRef<ElementRef | null>(null)
+
+    // useEffect(() => {
+    //   if(myRef && myRef.current) {
+       
+    //   }
+    // },[myRef])
+    const executeScroll = () => myRef.current.scrollIntoView()
   return (
+    
     <Box className={styles.homepage}>
+      {/* <Button onClick={executeScroll}>tesst </Button> */}
       <Community />
       <Token />
       <ExchangesComponent />
-      <AboutComponent />
+      <Box >
+        <AboutComponent />
+      </Box>
+     
       <BabyDogCardComponent />
       <RewardsSectionComponent />
       <Box className={styles.out_document}>
