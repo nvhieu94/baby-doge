@@ -6,65 +6,45 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import styles from "@/styles/Home.module.scss";
-import Image from 'next/image'
+import Image from "next/image";
 ///image
-import facebookImg from '@/assets/images/facebook.svg';
-import instargramImg from '@/assets/images/instargram.svg';
-import telegramImg from '@/assets/images/telegram.svg';
-import twitterImg from '@/assets/images/twitter.svg';
-import socialMedia2 from '@/assets/images/social-media-2.svg';
-import socialMedia1 from '@/assets/images/social-media-1.svg';
+import facebookImg from "@/assets/images/facebook.svg";
+import instargramImg from "@/assets/images/instargram.svg";
+import telegramImg from "@/assets/images/telegram.svg";
+import twitterImg from "@/assets/images/twitter.svg";
+import socialMedia2 from "@/assets/images/social-media-2.svg";
+import socialMedia1 from "@/assets/images/social-media-1.svg";
+import tokendoge from '@/assets/images/tokendog.png';
+import imageDoge from '@/assets/images/baby-doge.png';
+
 const Token = () => {
   return (
     <Box className={styles.token}>
-      <Container className={styles.follow_container}>
-        <Box className={styles.follow_us}>
-          <Box className={styles.bsc_address_wrapper}>
-            <Box className={styles.input_wrapper}>
-              <Select
-                className={styles.select_address}
-                displayEmpty
-                value={1}
-                input={<OutlinedInput sx={{ color: "#fff", width: 150 }} />}
-                inputProps={{ "aria-label": "Without label" }}
-              >
-                <MenuItem disabled value={1}>
-                  <em>BSC ADDRESS</em>
-                </MenuItem>
-              </Select>
-              <Typography component={"p"}>
-                xc748673057861a797275CD8A068AbB95A902e8de
-              </Typography>
-            </Box>
-            <Box className={styles.address_coppy}>
-              <Button className={styles.btn_address_coppy}>Copy Address</Button>
-            </Box>
-          </Box>
-          <Box className={styles.token_header}>Follow Us</Box>
-          <Box className={styles.social_medias}>
-              <Box className={styles.media}><Image src={telegramImg.src} width={50} height={50} alt="" /></Box>
-              <Box className={styles.media}><Image src={twitterImg.src} width={50} height={50} alt="" /></Box>
-              <Box className={styles.media}><Image src={socialMedia2.src} width={50} height={50} alt="" /></Box>
-              <Box className={styles.media}><Image src={socialMedia1.src} width={50} height={50} alt="" /></Box>
-              <Box className={styles.media}><Image src={facebookImg.src} width={50} height={50} alt="" /></Box>
-              <Box className={styles.media}><Image src={instargramImg.src} width={50} height={50} alt="" /></Box>
-          </Box>
-          <Box className={styles.token_actions}>
-            <Button className={styles.action}>View Chart</Button>
-            <Button className={styles.action}>Check BSC SCAN</Button>
-            <Button className={styles.action}>ETH/BSC Bridge</Button>
-            <Button className={styles.action}>How ToTo Buy Baby Doge</Button>
-          </Box>
-        </Box>
-      </Container>
+      
 
       <Grid container sx={{ height: "100%" }}>
-        <Grid item md={6} sx={{ height: "100%" }}>
-          <Box className={styles.buy_doge_swap}></Box>
+        <Grid item md={6}  xs={12} sx={{ height: "100%", backgroundColor:'#141245' }}>
+          <Box className={styles.buy_doge_swap}>
+              <Box className={styles.image_token}>
+                  <Image src={tokendoge.src} alt='' width={ 278} height={214} />
+                  <Box className={styles.token_title}>Baby Doge Swap</Box>
+                  <Box className={styles.token_sutitle}>
+                    <p>We plan to offer offer projects & their community as low as 0% </p>
+                    <p>swap fees for providing liquidity</p>
+                  </Box>
+                  <Box className={styles.token_action}> <Button className={styles.btn_primary}>Early Sign Up</Button></Box>
+              </Box>
+          </Box>
         </Grid>
-        <Grid item md={6} sx={{ height: "100%" }}>
+        <Grid item md={6} xs={12} sx={{ height: "100%",backgroundColor:'#141245' }}>
           <Box className={styles.buy_doge_nft}>
-         
+          
+            <Box className={styles.image_token}>
+                <Image src={imageDoge.src} alt='' width={ 180.62} height={214}  />
+                <Box className={styles.token_title}>Baby Doge NFT is here</Box>
+                <Box className={styles.token_sutitle}><p>Baby Doge NFT SOLD OUT and is LIVE</p></Box>
+                <Box className={styles.token_action}> <Button className={styles.btn_primary}>Meet Baby Doge NFT</Button></Box>
+            </Box>
           </Box>
         </Grid>
       </Grid>

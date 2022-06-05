@@ -1,29 +1,57 @@
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
+
+// @mixin mobile { @media (max-width: #{$mobile -width - 1px}) {     
+//   @content;   
+//  } 
+// }
+
+@media only screen and (max-width: 768px){
+  .token {
+    .bsc_address_wrapper {
+      display: block;
+    }
+  }
+}
 .homepage {
   color: #ffffff;
+
   .community {
     background-image: url('../assets/images/community-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 652px;
+
     .community_content {
       padding: 140px 0px 0 30px;
       font-style: normal;
+
       .title {
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
         padding-bottom: 32px;
       }
+
       .subtitle {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
         color: #FCFCFC;
       }
+
       .community_actions {
         display: flex;
         justify-items: center;
         margin-top: 42px;
+
+        button {
+          margin-right: 32px;
+        }
+
         .action {
           margin-right: 32px;
           background: #4F70FD;
@@ -31,22 +59,75 @@
           color: #FCFCFC;
         }
       }
-   
+
     }
   }
-  .token{
-    height: 792px;
-   
+
+  .token {
+    // height: 792px;
+
     .buy_doge_swap {
       background: #1E1B68;
       height: 100%;
+      // position: relative;
+
+      text-align: center;
+
+      // .image_token {
+      //   margin: 0;
+      //   position: absolute;
+      //   top: 65%;
+      //   left: 50%;
+      //   margin-right: -50%;
+      //   transform: translate(-50%, -50%)
+      // }
     }
+
     .buy_doge_nft {
       background: #141245;
       height: 100%;
+      // position: relative;
+      width: 100%;
+      text-align: center;
+
+      // .image_token {
+      //   margin: 0;
+      //   position: absolute;
+      //   top: 65%;
+      //   left: 50%;
+      //   margin-right: -50%;
+      //   transform: translate(-50%, -50%)
+      // }
     }
+
+    .token_title {
+      text-align: center;
+      margin: 42px 0 42px 0;
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    .token_sutitle {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .token_action {
+      button {
+        // font-style: normal;
+        // font-size: 16px;
+        // line-height: 19px;
+        // background: #4F70FD;
+        // border-radius: 22px;
+        // color: #FFFFFF;
+        margin: 20px;
+      }
+
+    }
+
     .follow_container {
       position: relative;
+  
       .follow_us {
         position: absolute;
         background: #1F0554;
@@ -58,30 +139,42 @@
         left: 0;
         top: -212px;
         color: #ffffff;
+        z-index: 1;
+
         .bsc_address_wrapper {
           display: flex;
-          align-items:center;
+          align-items: center;
           padding: 50px 100px 50px 100px;
+          // @include mobile {     
+          //   display: block; 
+          //  } 
           .input_wrapper {
             display: flex;
-            align-items:center;
+            align-items: center;
             background: #1A0E31;
             border-radius: 22px;
-            width: 780px;
+            width: 100%;
             height: 54px;
             padding: 16px 20px 16px 20px;
+
             .select_address {
               width: 160px;
+
               svg {
                 color: #ffffff;
               }
+
               fieldset {
                 border: none;
               }
             }
+          
           }
+
           .address_coppy {
             margin-left: auto;
+            width: 180px;
+            margin-left: 30px;
             .btn_address_coppy {
               font-style: normal;
               font-size: 16px;
@@ -92,38 +185,274 @@
             }
           }
         }
+
         .token_header {
           text-align: center;
           font-weight: 700;
           font-size: 24px;
           margin-bottom: 40px;
         }
+
         .social_medias {
           display: flex;
           align-items: center;
           text-align: center;
           justify-content: center;
-          .media{
+
+          .media {
             margin: 20px;
           }
         }
+
         .token_actions {
           display: flex;
           align-items: center;
           text-align: center;
           justify-content: center;
-          .action {
-            font-style: normal;
-            font-size: 16px;
-            line-height: 19px;
-            background: #4F70FD;
-            border-radius: 22px;
-            color: #FFFFFF;
+
+          button {
             margin: 20px;
           }
+
+          // .action {
+          //   font-style: normal;
+          //   font-size: 16px;
+          //   line-height: 19px;
+          //   background: #4F70FD;
+          //   border-radius: 22px;
+          //   color: #FFFFFF;
+
+          // }
         }
       }
     }
 
   }
+
+  .exchanges {
+    background: #0B011E;
+    height: 328px;
+    color: #FFFFFF;
+
+    .exchanges_title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      padding: 40px 0 50px 0;
+    }
+
+    .exchanges_subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: #AAAAAA;
+      padding: 0 0 50px 0;
+    }
+
+    .exchanges_slide {
+      height: 80px;
+    }
+  }
+
+  .about_section {
+    // height: 460px;
+    background: #141245;
+
+    .box_wrapper {
+      padding: 42px 0 42px 0;
+
+    }
+
+    .about_title {
+      font-weight: 700;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: justify;
+      color: #FCFCFC;
+    }
+  }
+
+  .baby_dog_card_section {
+    background: #1E1B68;
+
+    // height: 433px;
+    .box_wrapper {
+      padding: 42px 0 42px 0;
+
+      .baby_doge_title {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      .subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        color: #FCFCFC;
+      }
+    }
+  }
+
+  .rewards_section {
+    background-color: #141245;
+    padding: 40px 0 40px 0;
+
+    .rewards_header {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    .rewards_subdesc {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #FCFCFC;
+      padding: 32px 0 32px 0 ;
+    }
+
+    .left_col {
+      display: grid;
+      justify-content: end;
+    }
+  }
+
+  .out_document {
+    padding: 40px 0 40px 0;
+    background: #1E1B68;
+
+    .header {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    .document_select_wrapper {
+      display: flex;
+      align-items: center;
+      padding: 50px 0 0 0;
+      justify-content: center;
+      .select_box {
+        background: #1A0E31;
+        border-radius: 22px;
+        width: 780px;
+        margin-right: 15px;
+        fieldset {
+          border: none;
+        }
+        svg {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .baby_dog_media_section {
+    padding: 40px 0 40px 0;
+    background: #141245;
+    height: 614px;
+    .media_header {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  .as_seen_in {
+    padding: 40px 0 40px 0;
+    background: #0B011E;
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+    }
+  }
+  .paw_board {
+    background: #1E1B68;
+    padding: 40px 0 40px 0;
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+    }
+    .paw_board_card {
+      margin-top: 50px;
+    }
+  }
+  .faq_section {
+    background: #141245;
+    padding: 40px 0 40px 0;
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+    }
+    .faq_list {
+      margin-top: 50px;
+    }
+  }
+  .joi_our_community {
+    
+    background: #1E1B68;
+    padding: 40px 0 40px 0;
+    .follow_icon {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      .media {
+        margin: 20px;
+      }
+    }
+  }
+  .crypto_cause {
+    background: #0B011E;
+    padding: 40px 0 40px 0;
+  }
+  .contact_us {
+    background: #141245;
+    padding: 40px 0 40px 0;
+    .formControl {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+ 
+  .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+}
+
+.btn_primary {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  background: #4F70FD;
+  border-radius: 22px;
+  color: #FFFFFF;
+
+  &:hover {
+    background: #2b3d8d;
+  }
+
 }

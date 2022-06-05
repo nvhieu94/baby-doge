@@ -7,7 +7,11 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true
-  }
+  },
+  images: {
+    domains: ['cdn.shopify.com'],
+    formats: ['image/avif', 'image/webp'],
+  },
 }
 
 module.exports = nextConfig

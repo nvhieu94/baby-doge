@@ -2,6 +2,7 @@ import React from "react";
 import { LayoutProps } from "@/models/index";
 import { Stack, Box } from "@mui/material";
 import Header from "../../header";
+import Footer from '../../footer';
 
 const MainLayout = (props: LayoutProps) => {
   const { children } = props;
@@ -14,6 +15,7 @@ const MainLayout = (props: LayoutProps) => {
     >
       <Header />
       <Box component="main">{children}</Box>
+      <Footer />
     </Stack>
   );
 };

@@ -1,0 +1,25 @@
+.card_container {
+    padding: 20px;
+    background: #100F3C;
+    border-radius: 22px;
+    height: 100%;
+    width: 100%;
+    .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+    .description {
+        ul > li {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FCFCFC;
+        }
+    }
+}

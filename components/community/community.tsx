@@ -18,8 +18,8 @@ const Community = () => {
             adoption.
           </Typography>
           <Box className={styles.community_actions}>
-              <Button className={styles.action}>Buy On Pancake Swap</Button>
-              <Button className={styles.action}>Buy On Uniswap</Button>
+              <Button className={`  ${styles.btn_primary} `}>Buy On Pancake Swap</Button>
+              <Button className={`  ${styles.btn_primary} `}>Buy On Uniswap</Button>
           </Box>
         </Box>
         
