@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from "react";
 
 import MainLayout from "@/components/layouts/main-layout/main-layout";
 
@@ -16,19 +16,19 @@ import AboutComponent from "@/components/about";
 import BabyDogCardComponent from "@/components/baby-dog-card";
 import RewardsSectionComponent from "@/components/rewards";
 import BabyDogMediaSection from "@/components/baby-dog_media";
-import PawBoardSectionComponent from '@/components/paw-board';
-import FaqSctionComponent from '@/components/faq';
-import JoinOurCommunitySection from '@/components/join-our-community';
-import CryptoWithCause from '@/components/crypto-with-cause';
-import ContactUs from '@/components/contact-us'
+import PawBoardSectionComponent from "@/components/paw-board";
+import FaqSctionComponent from "@/components/faq";
+import JoinOurCommunitySection from "@/components/join-our-community";
+import CryptoWithCause from "@/components/crypto-with-cause";
+import ContactUs from "@/components/contact-us";
 //styles
 import styles from "@/styles/Home.module.scss";
-import SlickSlide from '@/components/slick-slide';
-
+import SlickSlide from "@/components/slick-slide";
 
 const asSeenInData = [
   {
-    image: "https://cdn.shopify.com/s/files/1/0388/4833/1916/files/hd-nasdaq_300x100.png?v=1646404931",
+    image:
+      "https://cdn.shopify.com/s/files/1/0388/4833/1916/files/hd-nasdaq_300x100.png?v=1646404931",
     height: 30,
     width: 106,
     link: "https://www.nasdaq.com/articles/baby-doge-crypto%3A-5-things-to-know-about-babydoge-and-the-elon-musk-buzz-2021-07-01?amp",
@@ -175,28 +175,30 @@ const asSeenInData = [
 ];
 
 const Home: NextPageWithLayout = () => {
-    // const myRef = useRef<ElementRef | null>(null)
+  // const myRef = useRef<ElementRef | null>(null)
 
-    // useEffect(() => {
-    //   if(myRef && myRef.current) {
-       
-    //   }
-    // },[myRef])
-    const executeScroll = () => myRef.current.scrollIntoView()
+  // useEffect(() => {
+  //   if(myRef && myRef.current) {
+
+  //   }
+  // },[myRef])
+  // const executeScroll = () => myRef.current.scrollIntoView()
   return (
-    
     <Box className={styles.homepage}>
       {/* <Button onClick={executeScroll}>tesst </Button> */}
       <Community />
       <Token />
       <ExchangesComponent />
-      <Box >
+      <Box id="about">
         <AboutComponent />
       </Box>
-     
+
       <BabyDogCardComponent />
-      <RewardsSectionComponent />
-      <Box className={styles.out_document}>
+      <Box id="reward">
+        <RewardsSectionComponent />
+      </Box>
+
+      <Box id="document" className={styles.out_document}>
         <Container>
           <Box className={styles.header}>OUR DOCUMENTS</Box>
           <Box className={styles.document_select_wrapper}>
@@ -221,15 +223,22 @@ const Home: NextPageWithLayout = () => {
       <BabyDogMediaSection />
       <Box className={styles.as_seen_in}>
         <Box className={styles.title}>AS SEEN IN</Box>
-        <Box sx={{marginTop:'30px'}} className="custom-slick-slide">
-        <SlickSlide dataSource={asSeenInData} />
+        <Box sx={{ marginTop: "30px" }} className="custom-slick-slide">
+          <SlickSlide dataSource={asSeenInData} />
         </Box>
       </Box>
-      <PawBoardSectionComponent />
+      <Box id="roadmaps">
+        <PawBoardSectionComponent />
+      </Box>
+
       <FaqSctionComponent />
       <JoinOurCommunitySection />
-      <CryptoWithCause />
-      <ContactUs />
+      <Box id="charity">
+        <CryptoWithCause />
+      </Box>
+      <Box id="contact">
+        <ContactUs />
+      </Box>
     </Box>
   );
 };

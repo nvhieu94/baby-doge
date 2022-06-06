@@ -11,15 +11,36 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import styles from "@/styles/Header.module.scss";
+import {Link} from 'react-scroll'
 
 const pages = [
-  "About",
-  "Tokenomics",
-  "Charity",
-  "Documents",
-  "Roadmaps",
-  "Contact",
+  {
+    title: "About",
+    key: 'about'
+  },
+  {
+    title: "Tokenomics",
+    key: 'reward'
+  },
+  {
+    title: "Charity",
+    key: 'charity'
+  },
+  {
+    title: "Documents",
+    key: 'document'
+  },
+  {
+    title: "Roadmaps",
+    key: 'roadmaps'
+  },
+  {
+    title: "Contact",
+    key: 'contact'
+  },
 ];
+
+
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -46,7 +67,7 @@ const Header = () => {
 
   return (
     <AppBar position="static" className={styles.header}>
-      <Container>
+      <Container className={styles.header_container}>
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           {/* <Typography
@@ -96,8 +117,9 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.key} onClick={handleCloseNavMenu}>
+                   <Link key={page.key}  to={page.key} spy={true} smooth={true}><Typography textAlign="center">{page.title}</Typography></Link>
+                  
                 </MenuItem>
               ))}
             </Menu>
@@ -123,14 +145,16 @@ const Header = () => {
           </Typography> */}
           <Box className={styles.navbar} sx={{ flexGrow: 1,justifyContent:"center", display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-              className={styles.navbar_item}
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, }}
-              >
-                {page}
-              </Button>
+              <Link key={page.key}  to={page.key} spy={true} smooth={true}>
+                 <Button
+                  className={styles.navbar_item}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, }}
+                  >
+                    {page.title}
+                  </Button>
+              </Link>
+           
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }} className={styles.actions}>

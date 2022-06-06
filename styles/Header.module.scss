@@ -1,11 +1,17 @@
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     // height: 87px;
     background-color: #120036;
     color: #FFFFFF;
     display: flex;
     align-items:center;
+    height: 70px;
+    margin-bottom: 80px;
     // padding: 25px 0 25px 0;
     font-size: 16px;
+  
     .actions {
         margin-left: auto;
         .btn_buy_now {

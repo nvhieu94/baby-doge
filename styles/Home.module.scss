@@ -2,12 +2,11 @@ $breakpoint-tablet: 768px;
 
 .homepage {
   color: #ffffff;
-
   .community {
     background-image: url('../assets/images/community-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    // height: 652px;
+    padding: 95px 0 60px 0;
     position: relative;
 
     .community_content {
@@ -273,6 +272,7 @@ $breakpoint-tablet: 768px;
   .about_section {
     // height: 460px;
     background: #141245;
+    padding-top: 50px;
 
     .box_wrapper {
       padding: 42px 0 42px 0;
@@ -319,8 +319,7 @@ $breakpoint-tablet: 768px;
 
   .rewards_section {
     background-color: #141245;
-    padding: 40px 0 40px 0;
-
+    padding: 95px 0 60px 0;
     .rewards_header {
       text-align: center;
       font-weight: 700;
@@ -344,7 +343,7 @@ $breakpoint-tablet: 768px;
   }
 
   .out_document {
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
     background: #1E1B68;
 
     .header {
@@ -378,7 +377,7 @@ $breakpoint-tablet: 768px;
   }
 
   .baby_dog_media_section {
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
     background: #141245;
     height: 614px;
 
@@ -405,7 +404,7 @@ $breakpoint-tablet: 768px;
 
   .paw_board {
     background: #1E1B68;
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
 
     .title {
       font-style: normal;
@@ -422,7 +421,7 @@ $breakpoint-tablet: 768px;
 
   .faq_section {
     background: #141245;
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
 
     .title {
       font-style: normal;
@@ -440,7 +439,7 @@ $breakpoint-tablet: 768px;
   .joi_our_community {
 
     background: #1E1B68;
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
 
     .follow_icon {
       display: flex;
@@ -456,12 +455,12 @@ $breakpoint-tablet: 768px;
 
   .crypto_cause {
     background: #0B011E;
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
   }
 
   .contact_us {
     background: #141245;
-    padding: 40px 0 40px 0;
+    padding: 95px 0 60px 0;
 
     .formControl {
       width: 100%;

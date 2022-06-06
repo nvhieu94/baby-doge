@@ -14,7 +14,7 @@ const MainLayout = (props: LayoutProps) => {
       }}
     >
       <Header />
-      <Box component="main">{children}</Box>
+        <Box component="main">{children}</Box>
       <Footer />
     </Stack>
   );
