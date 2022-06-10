@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import styles from "@/styles/Header.module.scss";
 import {Link} from 'react-scroll'
-
+import {ModalLucky} from '../modal-lucky'
 const pages = [
   {
     title: "About",
@@ -43,6 +43,9 @@ const pages = [
 
 
 const Header = () => {
+
+ 
+  const [openModalLucky, setOpenModalLucky] = React.useState<boolean>(false);
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -63,6 +66,14 @@ const Header = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const handleOpenModalLucky = () => {
+    setOpenModalLucky(true);
+   
+  };
+  const onCloseModalLucky = () => {
+    setOpenModalLucky(false);
   };
 
   return (
@@ -144,6 +155,14 @@ const Header = () => {
             LOGO
           </Typography> */}
           <Box className={styles.navbar} sx={{ flexGrow: 1,justifyContent:"center", display: { xs: "none", md: "flex" } }}>
+              <Button
+                  className={styles.navbar_item}
+                  variant="outlined"
+                    onClick={handleOpenModalLucky}
+                    sx={{ my: 2, color:'red', background:'red' }}
+                  >
+                   Lucky Wheel
+                  </Button>
             {pages.map((page) => (
               <Link key={page.key}  to={page.key} spy={true} smooth={true}>
                  <Button
@@ -163,6 +182,7 @@ const Header = () => {
           </Box>
         </Toolbar>
       </Container>
+      <ModalLucky  open={openModalLucky} onClose={onCloseModalLucky} />
     </AppBar>
   );
 };
