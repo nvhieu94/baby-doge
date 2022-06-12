@@ -20,17 +20,15 @@ const AboutComponent = () => {
         <Grid container>
           <Grid item md={6}>
             <Box className={styles.box_wrapper}>
-              <Typography className={styles.about_title}>ABOUT BABY DOGE</Typography>
+              <Typography className={styles.about_title}>ABOUT LUCKY FLOKI</Typography>
               <Typography className={styles.subtitle}>
-                Baby Doge is cute but with a lot of BITE! $Baby Doge is a
-                deflationary token designed to become more scarce over time. All
-                holders of Baby Doge will earn more baby doge that is
-                automatically sent to your wallet by simply holding Baby Doge
-                coins in your wallet. Watch the amount of baby doge grow in your
-                wallet as baby doge coin holders automatically receive a 5% fee
-                from every on chain transaction that happens on the Baby Doge
-                ecosystem. The community receives more baby doge coins from the
-                fees generated each transaction.
+               $LFloki is a deflationary token designed to become more scarce over time. All holders of Lucky Floki will earn more lucky floki that is automatically sent to your wallet by simply holding Lucky Floki coins in your wallet. Watch the amount of lucky floki grow in your wallet as lucky floki coin holders automatically receive a 2% fee from every on chain transaction that happens on the Lucky Floki ecosystem. The community receives more lucky floki coins from the fees generated each transaction.
+              </Typography>
+              <Typography sx={{marginTop: 2}} className={styles.subtitle}>
+              1% of each transaction is used for charity
+              </Typography>
+              <Typography  sx={{marginTop: 2}} className={styles.subtitle}>
+              2% of each transaction redistributed to holders
               </Typography>
               <Box py={4}>
                 <Button className={styles.btn_primary}>Buy Uniswap</Button>
@@ -59,9 +57,7 @@ const AboutComponent = () => {
                           color="#FCFCFC"
                           className={styles.subtitle}
                         >
-                          {
-                            "The dead wallet holds 45%+ of the supply. That means out of the 5% of the reflections 45%+ of them will be distributed to the dead wallet each transaction. Thus, coins are burned with each on chain transaction."
-                          }
+                          The dead wallet holds 9%+ of the supply. That means out of the 2% of the reflections 9% of them will be distributed to the dead wallet each transaction. Thus, coins are burned with each on chain transaction.
                         </Typography>
                       </React.Fragment>
                     }
@@ -81,9 +77,7 @@ const AboutComponent = () => {
                           color="#FCFCFC"
                           className={styles.subtitle}
                         >
-                          {
-                           "5% fee of each transaction is redistributed to token holders. That means you can earn more Baby Doge Coins by holding them in your wallet. (centralized exchanges/wallets may not apply tokenomics)"
-                          }
+                       2% fee of each transaction is redistributed to token holders. That means you can earn more Lucky Floki Coins by holding them in your wallet. (centralized exchanges/wallets may not apply tokenomics)
                         </Typography>
                       </React.Fragment>
                     }
@@ -125,9 +119,7 @@ const AboutComponent = () => {
                           color="#FCFCFC"
                           className={styles.subtitle}
                         >
-                          {
-                            "We have a designated charity wallet that receives redistributions that are used to support our charity partners."
-                          }
+                        We have a designated charity wallet that receives redistributions that are used to support our charity partners.
                         </Typography>
                       </React.Fragment>
                     }

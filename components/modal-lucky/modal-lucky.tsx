@@ -134,9 +134,7 @@ export const ModalLucky = (props: IModalLucky) => {
 
   return (
     <>
-    <Dialog open={open} sx={{
-      maxWidth: 'xl'
-    }} >
+    <Dialog open={open} fullScreen={true} >
       <Box py={1}>
         {onClose ? (
           <IconButton
@@ -154,7 +152,7 @@ export const ModalLucky = (props: IModalLucky) => {
         ) : null}
       </Box>
       <DialogContent sx={{
-        width: 600,
+        // width: 600,
         color: '#1A43E9',
         fontWeight: '500, Medium',
         fontSize: '40px'

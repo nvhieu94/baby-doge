@@ -17,7 +17,7 @@ const RewardsSectionComponent = () => {
     <Box className={styles.rewards_section}>
       <Container>
           <Box className={styles.rewards_header}>REWARDS IN YOUR WALLET</Box>
-          <Box className={styles.rewards_subdesc}>Baby Doge is cute but with a lot of BITE! $Baby Doge is a deflationary token designed to become more scarce over time. All holders of Baby Doge will earn more baby doge that is automatically sent to your wallet by simply holding Baby Doge coins in your wallet. Watch the amount of baby doge grow in your wallet as baby doge coin holders automatically receive a 5% fee from every transaction that happens on the Baby Doge network. The community receives more baby doge coins from the fees generated each transaction.</Box>
+          <Box className={styles.rewards_subdesc}>Lucky Floki is cute but with a lot of BITE! $Lucky Floki is a deflationary token designed to become more scarce over time. All holders of Baby Doge will earn more baby doge that is automatically sent to your wallet by simply holding Baby Doge coins in your wallet. Watch the amount of baby doge grow in your wallet as baby doge coin holders automatically receive a 5% fee from every transaction that happens on the Baby Doge network. The community receives more baby doge coins from the fees generated each transaction.</Box>
         <Grid container>
           <Grid item md={6}>
               <Box className={styles.left_col}>

@@ -25,11 +25,7 @@ const Community = () => {
             World&apos;s Best Community Coin
           </Typography>
           <Typography className={styles.subtitle} component="p">
-            A new crypto birthed by fans of the doge meme community. Simply
-            Love, pet, and hold as 5% from each transaction is automatically
-            redistributed to baby doge holders. Baby Doge primary utility is
-            building a fun meme community to spread awareness of animal
-            adoption.
+          {`LuckyFloki ("Lfloki") is a dog-themed coin meme. However, it names "a new trend" instead of a coin meme .This is a cryptocurrency that was born by fans and members of the Shiba Inu (SHIB) community. The coin is named after Elon Musk&apos;s Shiba Inu.`}
           </Typography>
           <Box className={styles.community_actions}>
               <Button className={`  ${styles.btn_primary} `}>Buy On Pancake Swap</Button>
@@ -62,22 +58,23 @@ const Community = () => {
                       <Box className={styles.crypto_section_header}>Follow Us</Box>
                       <Box className={styles.socmed_wrapper}>
                       <Box className={styles.media}>
-                          <Image src={telegramImg.src} width={50} height={50} alt="" />
+                         <a  href="https://t.me/luckyflokiglobal"><Image src={telegramImg.src} width={50} height={50} alt="" /></a>
                         </Box>
                         <Box className={styles.media}>
-                          <Image src={twitterImg.src} width={50} height={50} alt="" />
+                          <a href="https://twitter.com/luckyflokicoins">    <Image src={twitterImg.src} width={50} height={50} alt="" /></a>
+                      
                         </Box>
                         <Box className={styles.media}>
-                          <Image src={socialMedia2.src} width={50} height={50} alt="" />
+                        <a href="https://solidproof.io/"><Image src={socialMedia2.src} width={50} height={50} alt="" /></a>
                         </Box>
                         <Box className={styles.media}>
-                          <Image src={socialMedia1.src} width={50} height={50} alt="" />
+                        <a href="#"><Image src={socialMedia1.src} width={50} height={50} alt="" /></a>
                         </Box>
                         <Box className={styles.media}>
-                          <Image src={facebookImg.src} width={50} height={50} alt="" />
+                        <a href="#"><Image src={facebookImg.src} width={50} height={50} alt="" /></a>
                         </Box>
                         <Box className={styles.media}>
-                          <Image src={instargramImg.src} width={50} height={50} alt="" />
+                        <a href="#"><Image src={instargramImg.src} width={50} height={50} alt="" /></a>
                         </Box>
                         
                       </Box>

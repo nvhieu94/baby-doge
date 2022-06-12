@@ -137,13 +137,13 @@ const Footer = () => {
                 sx={{ marginBottom: "8px" }}
                 className={styles.footer_subtitle}
               >
-                Copyright ® 2022 Baby Doge. All Rights Reserved Privacy Policy -
+                Copyright ® 2022 Lucky Floki. All Rights Reserved Privacy Policy -
                 Terms & Conditions
               </Typography>
               <Typography component="p" className={styles.footer_subtitle}>
-                Baby Doge is not an investment and created as a meme parody like
-                doge. Baby Doge makes no promises and is not responsible for any
-                losses or errors use at your own risk. Baby Doge is not
+              Lucky Floki is not an investment and created as a meme parody like
+                doge. Lucky Floki makes no promises and is not responsible for any
+                losses or errors use at your own risk. Lucky Floki is not
                 affiliated with DogeCoin.
               </Typography>
             </Box>

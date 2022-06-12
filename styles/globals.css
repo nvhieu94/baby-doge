@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: Lato;
   font-style: normal;
+  /* overflow: auto !important;
+  padding-right: 0px !important */
 }
 
 a {

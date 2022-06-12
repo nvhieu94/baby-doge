@@ -27,7 +27,7 @@ const Token = () => {
           <Box className={styles.buy_doge_swap}>
               <Box className={styles.image_token}>
                   <Image src={tokendoge.src} alt='' width={ 278} height={214} />
-                  <Box className={styles.token_title}>Baby Doge Swap</Box>
+                  <Box className={styles.token_title}>Lucky Floki Swap</Box>
                   <Box className={styles.token_sutitle}>
                     <p>We plan to offer offer projects & their community as low as 0% </p>
                     <p>swap fees for providing liquidity</p>
@@ -41,9 +41,9 @@ const Token = () => {
           
             <Box className={styles.image_token}>
                 <Image src={imageDoge.src} alt='' width={ 180.62} height={214}  />
-                <Box className={styles.token_title}>Baby Doge NFT is here</Box>
-                <Box className={styles.token_sutitle}><p>Baby Doge NFT SOLD OUT and is LIVE</p></Box>
-                <Box className={styles.token_action}> <Button className={styles.btn_primary}>Meet Baby Doge NFT</Button></Box>
+                <Box className={styles.token_title}>Lucky Floki NFT is here</Box>
+                <Box className={styles.token_sutitle}><p>Lucky Floki NFT SOLDOUT and is LIVE</p></Box>
+                <Box className={styles.token_action}> <Button className={styles.btn_primary}>Meet Lucky Floki NFT</Button></Box>
             </Box>
           </Box>
         </Grid>

@@ -54,23 +54,23 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 const data = [
   {
     question: "How to fix insufficient output on pancake swap?",
-    answer: "Increase slippage to 12%",
+    answer: "Increase slippage to 10",
   },
   {
     question: "How can I help?",
-    answer: "",
+    answer: "Tell your friends & family, about lucky floki. Social media is a wonderful place. You can also email your proposal to ….",
   },
   {
-    question: "What is Baby Doge Coin?",
-    answer: "",
+    question: "What is Lucky Floki Coin?",
+    answer: "Despite the name Lucky Floki Coin is actually a fun collectible token built on Binance smart chain with the purpose to spread awareness of animal adoption. Originally created as a meme joke with 1 billion supply and deflationary mechanics as oppose to traditional inflationary/fixed supply. Lucky Floki supply is decreased with each transaction 10% of the supply has been burned so far. Why print when you can burn?",
   },
   {
     question: "What are the fees?",
-    answer: "",
+    answer: "Every transaction has a 9% fee with 2% going to the holders,3% for marketing, 3% for develop and 1% for charity . The generated LP tokens are used for burns & powering the project.",
   },
   {
     question: "What do you mean by decentralized?",
-    answer: "",
+    answer: "It means you don't have to trust any central organization or person the way you would a bank. The developers nor team can seize your funds, but they also can't return them if you send them to the wrong address.",
   },
 ];
 
