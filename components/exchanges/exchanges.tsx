@@ -209,7 +209,7 @@ const ExchangesComponent = () => {
   return (
     <Box className={styles.exchanges}>
       <Box className={styles.exchanges_title}>EXCHANGES</Box>
-      <Box className={styles.exchanges_subtitle}>FRIENDS OF BABY DOGE</Box>
+      <Box className={styles.exchanges_subtitle}>FRIENDS OF LUCKYFLOKI</Box>
       <Box className={styles.exchanges_slide}>
         <Box className="custom-slick-slide">
           <SlickSlide dataSource={dataSlide} />

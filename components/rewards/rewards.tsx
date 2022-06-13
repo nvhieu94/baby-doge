@@ -17,7 +17,8 @@ const RewardsSectionComponent = () => {
     <Box className={styles.rewards_section}>
       <Container>
           <Box className={styles.rewards_header}>REWARDS IN YOUR WALLET</Box>
-          <Box className={styles.rewards_subdesc}>Lucky Floki is cute but with a lot of BITE! $Lucky Floki is a deflationary token designed to become more scarce over time. All holders of Baby Doge will earn more baby doge that is automatically sent to your wallet by simply holding Baby Doge coins in your wallet. Watch the amount of baby doge grow in your wallet as baby doge coin holders automatically receive a 5% fee from every transaction that happens on the Baby Doge network. The community receives more baby doge coins from the fees generated each transaction.</Box>
+          <Box className={styles.rewards_subdesc}>$LFloki is a deflationary token designed to become more scarce over time. All holders of Lucky Floki will earn more lucky floki that is automatically sent to your wallet by simply holding Lucky Floki coins in your wallet. Watch the amount of lucky floki grow in your wallet as lucky floki coin holders automatically receive a 2% fee from every on chain transaction that happens on the Lucky Floki ecosystem. The community receives more lucky floki coins from the fees generated each transaction.
+</Box>
         <Grid container>
           <Grid item md={6}>
               <Box className={styles.left_col}>
@@ -26,7 +27,7 @@ const RewardsSectionComponent = () => {
                   <ListItemAvatar><Image src={boneIcon.src} width={42} height={42} alt='' /></ListItemAvatar>
                   <ListItemText
                     sx={{fontSize:" 16px"}}
-                    primary="5%"
+                    primary="1%"
                     secondary={
                       <React.Fragment>
                         <Typography
@@ -37,7 +38,7 @@ const RewardsSectionComponent = () => {
                           className={styles.subtitle}
                         >
                           {
-                            "of each transaction added to liquidity pool"
+                            "of each transaction is used for charity"
                           }
                         </Typography>
                       </React.Fragment>
@@ -54,7 +55,7 @@ const RewardsSectionComponent = () => {
                   <ListItemAvatar><Image src={homeCircleIcon.src} width={42} height={42} alt='' /></ListItemAvatar>
                   <ListItemText
                     sx={{fontSize:" 16px"}}
-                    primary="5%"
+                    primary="2%"
                     secondary={
                       <React.Fragment>
                         <Typography

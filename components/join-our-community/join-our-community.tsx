@@ -43,27 +43,28 @@ const JoinOurCommunitySection = () => {
           </Grid>
         </Box>
         <Box className={styles.follow_icon}>
-       
-            <Box className={styles.media}>
-              <Image src={telegramImg.src} width={50} height={50} alt="" />
-            </Box>
-            <Box className={styles.media}>
-              <Image src={twitterImg.src} width={50} height={50} alt="" />
-            </Box>
-            <Box className={styles.media}>
-              <Image src={socialMedia2.src} width={50} height={50} alt="" />
-            </Box>
-            <Box className={styles.media}>
-              <Image src={socialMedia1.src} width={50} height={50} alt="" />
-            </Box>
-            <Box className={styles.media}>
-              <Image src={facebookImg.src} width={50} height={50} alt="" />
-            </Box>
-            <Box className={styles.media}>
-              <Image src={instargramImg.src} width={50} height={50} alt="" />
-            </Box>
-        
-        </Box>
+                      <Box className={styles.media}>
+                         <a  href="https://t.me/luckyflokiglobal"><Image src={telegramImg.src} width={50} height={50} alt="" /></a>
+                        </Box>
+                        <Box className={styles.media}>
+                          <a href="https://twitter.com/luckyflokicoins">    <Image src={twitterImg.src} width={50} height={50} alt="" /></a>
+                      
+                        </Box>
+                        <Box className={styles.media}>
+                        <a href="https://solidproof.io/"><Image src={socialMedia2.src} width={50} height={50} alt="" /></a>
+                        </Box>
+                        {/* <Box className={styles.media}>
+                        <a href="#"><Image src={socialMedia1.src} width={50} height={50} alt="" /></a>
+                        </Box>
+                        <Box className={styles.media}>
+                        <a href="#"><Image src={facebookImg.src} width={50} height={50} alt="" /></a>
+                        </Box>
+                        <Box className={styles.media}>
+                        <a href="#"><Image src={instargramImg.src} width={50} height={50} alt="" /></a>
+                        </Box> */}
+                        
+                      </Box>
+
       </Container>
     </Box>
   );

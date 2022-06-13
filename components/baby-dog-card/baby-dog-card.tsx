@@ -21,7 +21,8 @@ const BabyDogCardComponent = () => {
           </Grid>
           <Grid item md={6}>
             <Box py={2} className={styles.box_wrapper}>
-              <Typography className={styles.baby_doge_title}>BAYY DOGE CARD</Typography>
+              <Typography className={styles.baby_doge_title}>SPIN TO EARN
+</Typography>
               <Typography className={styles.subtitle}>
                     Baby Doge Coin application that will be available on iOS and Android. The application will have the following features:
               </Typography>

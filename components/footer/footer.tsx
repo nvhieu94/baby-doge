@@ -73,15 +73,15 @@ const Footer = () => {
               </Typography>
               <Box className={styles.social_media}>
                 <Box className={styles.media}>
-                  <Image src={telegramImg.src} width={23} height={23} alt="" />
+                 <a href="https://t.me/luckyflokiglobal"><Image src={telegramImg.src} width={23} height={23} alt="" /></a> 
                 </Box>
                 <Box className={styles.media}>
-                  <Image src={twitterImg.src} width={23} height={23} alt="" />
+                <a href="https://twitter.com/luckyflokicoins"> <Image src={twitterImg.src} width={23} height={23} alt="" /></a>
                 </Box>
                 <Box className={styles.media}>
-                  <Image src={socialMedia2.src} width={23} height={23} alt="" />
+                <a href="https://solidproof.io/"><Image src={socialMedia2.src} width={23} height={23} alt="" /></a>
                 </Box>
-                <Box className={styles.media}>
+                {/* <Box className={styles.media}>
                   <Image src={socialMedia1.src} width={23} height={23} alt="" />
                 </Box>
                 <Box className={styles.media}>
@@ -94,7 +94,7 @@ const Footer = () => {
                     height={23}
                     alt=""
                   />
-                </Box>
+                </Box> */}
               </Box>
             </Box>
           </Grid>
@@ -104,7 +104,7 @@ const Footer = () => {
                 OTHER LINKS
               </Typography>
               <Typography component="p" className={styles.footer_subtitle}>
-                Friends of Baby Doge Charuty As seen in
+                Friends of Lucky Floki Charuty As seen in
               </Typography>
             </Box>
             <Box py={4}>
@@ -112,11 +112,11 @@ const Footer = () => {
                 CONTACT US
               </Typography>
               <Typography component="p" className={styles.footer_subtitle}>
-                Press@@babydogecoin.com
+                 support@luckyfloki.io
               </Typography>
-              <Typography component="p" className={styles.footer_subtitle}>
+              {/* <Typography component="p" className={styles.footer_subtitle}>
                 Partnerships@babydogecoin.com
-              </Typography>
+              </Typography> */}
             </Box>
             <Box>
               <Typography className={styles.footer_title}>

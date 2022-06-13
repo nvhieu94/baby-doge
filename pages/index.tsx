@@ -211,7 +211,7 @@ const Home: NextPageWithLayout = () => {
                 inputProps={{ "aria-label": "Without label" }}
               >
                 <MenuItem disabled value={1}>
-                  WOOF PAPER
+                KYC AUDIT
                 </MenuItem>
               </Select>
             </Box>
@@ -221,21 +221,21 @@ const Home: NextPageWithLayout = () => {
         </Container>
       </Box>
       <BabyDogMediaSection />
-      <Box className={styles.as_seen_in}>
+      {/* <Box className={styles.as_seen_in}>
         <Box className={styles.title}>AS SEEN IN</Box>
         <Box sx={{ marginTop: "30px" }} className="custom-slick-slide">
           <SlickSlide dataSource={asSeenInData} />
         </Box>
-      </Box>
+      </Box> */}
       <Box id="roadmaps">
         <PawBoardSectionComponent />
       </Box>
 
       <FaqSctionComponent />
       <JoinOurCommunitySection />
-      <Box id="charity">
+      {/* <Box id="charity">
         <CryptoWithCause />
-      </Box>
+      </Box> */}
       <Box id="contact">
         <ContactUs />
       </Box>

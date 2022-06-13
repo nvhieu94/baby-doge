@@ -48,7 +48,7 @@ const data = [
     title: "PHASE 5",
     description: [
       "300,000 Holders",
-      "Release Baby Doge Swap.",
+      "Release Lucky Floki Swap.",
       "Release NFT market place, NFT collection.",
       "Give away Tesla to community",
       "Memes. Everywhere.",

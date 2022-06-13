@@ -22,13 +22,7 @@ const AboutComponent = () => {
             <Box className={styles.box_wrapper}>
               <Typography className={styles.about_title}>ABOUT LUCKY FLOKI</Typography>
               <Typography className={styles.subtitle}>
-               $LFloki is a deflationary token designed to become more scarce over time. All holders of Lucky Floki will earn more lucky floki that is automatically sent to your wallet by simply holding Lucky Floki coins in your wallet. Watch the amount of lucky floki grow in your wallet as lucky floki coin holders automatically receive a 2% fee from every on chain transaction that happens on the Lucky Floki ecosystem. The community receives more lucky floki coins from the fees generated each transaction.
-              </Typography>
-              <Typography sx={{marginTop: 2}} className={styles.subtitle}>
-              1% of each transaction is used for charity
-              </Typography>
-              <Typography  sx={{marginTop: 2}} className={styles.subtitle}>
-              2% of each transaction redistributed to holders
+              $LFloki is a deflationary token designed to become more scarce over time. All holders of Lucky Floki will earn more lucky floki that is automatically sent to your wallet by simply holding Lucky Floki coins in your wallet. Watch the amount of lucky floki grow in your wallet as lucky floki coin holders automatically receive a 2% fee from every on chain transaction that happens on the Lucky Floki ecosystem. The community receives more lucky floki coins from the fees generated each transaction.
               </Typography>
               <Box py={4}>
                 <Button className={styles.btn_primary}>Buy Uniswap</Button>

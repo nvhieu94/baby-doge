@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Box, Container } from "@mui/system";
 import { Typography,Button } from "@mui/material";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
@@ -15,8 +15,12 @@ import socialMedia2 from "@/assets/images/social-media-2.svg";
 import socialMedia1 from "@/assets/images/social-media-1.svg";
 import tokendoge from '@/assets/images/tokendog.png';
 import imageDoge from '@/assets/images/baby-doge.png';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const Community = () => {
+
+  const [copied, setCopied] = useState<boolean>(false)
+
   return (
     <Box className={styles.community}>
       <Container>
@@ -51,9 +55,12 @@ const Community = () => {
                                   BSC ADDRESS
                                 </MenuItem>
                               </Select>
-                              <input type="text" value="0xc748673057861a797275CD8A068AbB95A902e8de" id="CryptoAddress" disabled />
+                              <input type="text" value="0x15681938b019D463e06715142e48538e496BCA09" id="CryptoAddress" disabled />
                           </Box>
-                          <Button className={`  ${styles.btn_primary} `}>Copy Address</Button>
+                          <CopyToClipboard onCopy={() => setCopied(true)} text={"0x15681938b019D463e06715142e48538e496BCA09"}>
+                          <Button className={`${styles.btn_primary} `} onClick={() => console.log('')}>Copy Address</Button>
+                          </CopyToClipboard>
+                          
                       </Box>
                       <Box className={styles.crypto_section_header}>Follow Us</Box>
                       <Box className={styles.socmed_wrapper}>
@@ -67,7 +74,7 @@ const Community = () => {
                         <Box className={styles.media}>
                         <a href="https://solidproof.io/"><Image src={socialMedia2.src} width={50} height={50} alt="" /></a>
                         </Box>
-                        <Box className={styles.media}>
+                        {/* <Box className={styles.media}>
                         <a href="#"><Image src={socialMedia1.src} width={50} height={50} alt="" /></a>
                         </Box>
                         <Box className={styles.media}>
@@ -75,14 +82,14 @@ const Community = () => {
                         </Box>
                         <Box className={styles.media}>
                         <a href="#"><Image src={instargramImg.src} width={50} height={50} alt="" /></a>
-                        </Box>
+                        </Box> */}
                         
                       </Box>
                       <Box className={styles.crypto_btn_group}>
                           <Button className={styles.btn_primary}>View Chart</Button>
                           <Button className={styles.btn_primary}>Check BSC SCAN</Button>
                           <Button className={styles.btn_primary}>ETH/BSC Bridge</Button>
-                          <Button className={styles.btn_primary}>How ToTo Buy Baby Doge</Button>
+                          <Button className={styles.btn_primary}>How ToTo Buy Lucky Floki</Button>
                          
                       </Box>
                   </Box>

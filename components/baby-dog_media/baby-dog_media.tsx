@@ -26,7 +26,7 @@ const data = [
     image: image2.src,
   },
   {
-    title: "BABY DOGE IS FAST!",
+    title: "LUCKY FLOKI IS FAST!",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: speedyFloki.src,
@@ -46,7 +46,7 @@ const data = [
     image: image2.src,
   },
   {
-    title: "BABY DOGE IS FAST!",
+    title: "LUCKY FLOKI IS FAST!",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: speedyFloki.src,
@@ -65,7 +65,7 @@ const data = [
     image: image2.src,
   },
   {
-    title: "BABY DOGE IS FAST!",
+    title: "LUCKY FLOKI IS FAST!",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: speedyFloki.src,
@@ -122,7 +122,7 @@ const BabyDogMediaSection = () => {
   return (
     <Box className={styles.baby_dog_media_section}>
       <Container>
-        <Box className={styles.media_header}>BABY DOGE ON MEDIA</Box>
+        <Box className={styles.media_header}>LUCKY FLOKI ON MEDIA</Box>
         <Box sx={{}} py={4}>
           <Slider {...settingSlide}>
             {data.map((item: any, index: number) => (

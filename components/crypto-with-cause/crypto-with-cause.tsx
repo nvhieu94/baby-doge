@@ -169,7 +169,7 @@ const CryptoWithCause = () => {
           marginTop: "50px",
         }}
       >
-        BABY DOGE HAS DONATED +$750,000 TO HELP SAVE THE DOGS. AND MORE TO GO!
+        LUCKY FLOKI HAS DONATED +$750,000 TO HELP SAVE THE DOGS. AND MORE TO GO!
       </Typography>
       <Box sx={{ marginTop: "30px" }} className="custom-slick-slide">
         <SlickSlide dataSource={data} />
