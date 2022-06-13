@@ -123,7 +123,7 @@ const Footer = () => {
                 WORK WITH US
               </Typography>
               <Typography component="p" className={styles.footer_subtitle}>
-                Jobs@@babydogecoin.com
+                support@luckyfloki.io
               </Typography>
             </Box>
           </Grid>

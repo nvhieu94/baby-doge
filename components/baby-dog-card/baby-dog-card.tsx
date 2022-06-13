@@ -21,18 +21,17 @@ const BabyDogCardComponent = () => {
           </Grid>
           <Grid item md={6}>
             <Box py={2} className={styles.box_wrapper}>
-              <Typography className={styles.baby_doge_title}>SPIN TO EARN
-</Typography>
+              <Typography className={styles.baby_doge_title}>SPIN TO EARN</Typography>
               <Typography className={styles.subtitle}>
-                    Baby Doge Coin application that will be available on iOS and Android. The application will have the following features:
+              coming soon
               </Typography>
-              <ul>
+              {/* <ul>
                   <li>Ability to load the Fiat balances with bank transfer</li>
                   <li>Ability to Buy Cryptocurrencies</li>
                   <li>Ability to send Cryptocurrencies</li>
                   <li>Ability to exchange crypto currencies for fiat</li>
                   <li>Will have new TextBit technology meaning the users can text BabyDoge to anyone anywhere in the world using a telephone number (restrictions apply). *Card is Currently Pending Completion By Third Party Provider*</li>
-              </ul>
+              </ul> */}
             </Box>
           </Grid>
         </Grid>
