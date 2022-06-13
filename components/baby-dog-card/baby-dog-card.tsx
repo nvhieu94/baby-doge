@@ -5,7 +5,7 @@ import styles from "@/styles/Home.module.scss";
 
 import Image from 'next/image'
 
-import dogCard from '@/assets/images/dog-card.png'
+import flokiCard from '@/assets/images/floki-card.png'
 
 const BabyDogCardComponent = () => {
 
@@ -15,7 +15,7 @@ const BabyDogCardComponent = () => {
         <Grid container>
           <Grid item md={6}>
             <Box className={styles.box_wrapper}>
-                <Image src={dogCard.src} alt='' width={480} height={304} /> 
+                <Image src={flokiCard.src} alt='' width={480} height={304} /> 
              
             </Box>
           </Grid>

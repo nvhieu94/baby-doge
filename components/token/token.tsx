@@ -14,8 +14,8 @@ import telegramImg from "@/assets/images/telegram.svg";
 import twitterImg from "@/assets/images/twitter.svg";
 import socialMedia2 from "@/assets/images/social-media-2.svg";
 import socialMedia1 from "@/assets/images/social-media-1.svg";
-import tokendoge from '@/assets/images/tokendog.png';
-import imageDoge from '@/assets/images/baby-doge.png';
+import tokenFloki from '@/assets/images/token-floki.png';
+import floki from '@/assets/images/floki.png';
 
 const Token = () => {
   return (
@@ -26,7 +26,7 @@ const Token = () => {
         <Grid item md={6}  xs={12} className={styles.token_left_col}>
           <Box className={styles.buy_doge_swap}>
               <Box className={styles.image_token}>
-                  <Image src={tokendoge.src} alt='' width={ 278} height={214} />
+                  <Image src={tokenFloki.src} alt='' width={ 278} height={214} />
                   <Box className={styles.token_title}>Lucky Floki Swap</Box>
                   <Box className={styles.token_sutitle}>
                     <p>We plan to offer offer projects & their community as low as 0% </p>
@@ -40,7 +40,7 @@ const Token = () => {
           <Box className={styles.buy_doge_nft}>
           
             <Box className={styles.image_token}>
-                <Image src={imageDoge.src} alt='' width={ 180.62} height={214}  />
+                <Image src={floki.src} alt='' width={ 180.62} height={214}  />
                 <Box className={styles.token_title}>Lucky Floki NFT is here</Box>
                 <Box className={styles.token_sutitle}><p>Lucky Floki NFT SOLDOUT and is LIVE</p></Box>
                 <Box className={styles.token_action}> <Button className={styles.btn_primary}>Meet Lucky Floki NFT</Button></Box>

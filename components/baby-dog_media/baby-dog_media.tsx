@@ -7,16 +7,16 @@ import styles from "@/styles/Home.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image1 from "@/assets/images/image1.png";
+import flokiMedia from "@/assets/images/flokiMedia.png";
 import image2 from "@/assets/images/image2.png";
-import image3 from "@/assets/images/image3.png";
+import speedyFloki from "@/assets/images/speedy-floki.png";
 
 const data = [
   {
     title: "TWEETED BY ELON MUSK",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image1.src,
+    image: flokiMedia.src,
   },
  
   {
@@ -29,14 +29,14 @@ const data = [
     title: "BABY DOGE IS FAST!",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image3.src,
+    image: speedyFloki.src,
   },
   
   {
     title: "TWEETED BY ELON MUSK",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image1.src,
+    image: flokiMedia.src,
   },
  
   {
@@ -49,13 +49,13 @@ const data = [
     title: "BABY DOGE IS FAST!",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image3.src,
+    image: speedyFloki.src,
   },
   {
     title: "TWEETED BY ELON MUSK",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image1.src,
+    image: flokiMedia.src,
   },
  
   {
@@ -68,7 +68,7 @@ const data = [
     title: "BABY DOGE IS FAST!",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image3.src,
+    image: speedyFloki.src,
   },
 ];
 const settings = {

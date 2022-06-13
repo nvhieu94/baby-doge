@@ -17,6 +17,7 @@ const MediaCard = (props: IMediaCardProps) => {
     <Box>
       <Card sx={{padding:'0 20px 0 20px', backgroundColor:'#141245', boxShadow:'none'}}>
         <CardMedia
+          
           component="img"
           height="247"
           width='280'

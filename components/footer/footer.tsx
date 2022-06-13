@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/system";
 import { Grid, Typography, FormHelperText, Button } from "@mui/material";
 import Image from "next/image";
 import styles from "@/styles/Footer.module.scss";
-import dogImage from "@/assets/images/dog.png";
+import floKiFooter from "@/assets/images/floki-footer.png";
 import FormControl, { useFormControl } from "@mui/material/FormControl";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import { useForm } from "react-hook-form";
@@ -129,7 +129,7 @@ const Footer = () => {
           </Grid>
           <Grid item md={4} xs={12}>
             <Box className={styles.footer_icon}>
-              <Image src={dogImage.src} alt="" width={86} height={86} />
+              <Image src={floKiFooter.src} alt="" width={86} height={86} />
             </Box>
             <Box>
               <Typography
